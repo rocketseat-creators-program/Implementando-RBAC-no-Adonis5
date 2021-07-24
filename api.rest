@@ -4,3 +4,12 @@ GET http://localhost:3333/users
 
 GET http://localhost:3333/users/1
 
+###
+
+POST http://localhost:3333/sessions
+content-type: application/json
+
+{
+  "email": "felipe@rocketseat.com.br",
+  "password": "topsecret"
+}

@@ -24,3 +24,5 @@ Route.where('id', /^[0-9]+$/)
 
 Route.get('/users', 'UsersController.index')
 Route.get('/users/:id', 'UsersController.show')
+
+Route.post('/sessions', 'SessionsController.store')
