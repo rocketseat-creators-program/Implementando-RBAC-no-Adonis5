@@ -20,6 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+Route.where('id', /^[0-9]+$/)
+
+Route.get('/users', 'UsersController.index')
+Route.get('/users/:id', 'UsersController.show')

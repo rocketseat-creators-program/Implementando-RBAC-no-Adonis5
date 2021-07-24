@@ -1,0 +1,6 @@
+GET http://localhost:3333/users
+
+###
+
+GET http://localhost:3333/users/1
+
